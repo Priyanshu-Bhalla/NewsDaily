@@ -1,0 +1,42 @@
+<nav className={`navbar fixed-top navbar-expand-md navbar-${mode} bg-${mode}`} >
+                    <Link className="navbar-brand" to="/">NewsDaily</Link>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon" ></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        {/* <ul className="navbar-nav mr-auto" >
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/general">Home <span className="sr-only">(current)</span></Link>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Categories
+                                </Link>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <Link className="dropdown-item" to="/business">Business</Link>
+                                    <Link className="dropdown-item" to="/health">Health</Link>
+                                    <Link className="dropdown-item" to="/general">General</Link>
+                                    <Link className="dropdown-item" to="/technology">Technology</Link>
+                                    <Link className="dropdown-item" to="/science">Science</Link>
+                                    <Link className="dropdown-item" to="/sports">Sports</Link>
+                                    <Link className="dropdown-item" to="/entertainment">Entertainment</Link>
+                                </div>
+                            </li>
+
+
+                        </ul> */}
+                        <div>
+
+                        </div>
+                        <div className="d-flex">
+                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button className={`btn btn-outline-${mode === "light" ? "dark" : "light"} mx-2 btn_search`} onClick={this.handleSearchClick}>Search</button>
+                        </div>
+
+                        <div className="theme" onClick={handleMode}>
+                            <i className={`fas fa-${mode === "light" ? "moon" : "sun"} fa-lg`}></i>
+                            <button className={`btn  btn-outline-${mode === "light" ? "dark" : "light"} btn_signup`} >Sign Up</button>
+
+                        </div>
+                    </div>
